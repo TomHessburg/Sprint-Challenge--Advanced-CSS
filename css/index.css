@@ -163,6 +163,9 @@ p {
 .navigtion {
   text-align: center;
   border-bottom: 1px solid #dfdfdf;
+  background: rgba(255, 255, 255, 0.6);
+  position: sticky;
+  top: 0;
 }
 .navigtion h1 {
   font-size: 5rem;
