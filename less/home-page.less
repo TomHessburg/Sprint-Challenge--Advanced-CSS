@@ -39,6 +39,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      &:hover{
+        cursor: pointer;
+        animation: popper .9s ease-in-out;
+      }
 
       @media (@phone){
         width: 90%;
@@ -111,3 +115,9 @@
     }
   }
 } // home
+
+
+@keyframes popper {
+  0% 100%{box-shadow: none}
+  20% {box-shadow: 0 0 50px rgba(0,0,0,.2)}
+}

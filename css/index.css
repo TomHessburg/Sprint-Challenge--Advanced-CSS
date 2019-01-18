@@ -1,3 +1,11 @@
+@keyframes FONT_ANIMATION {
+  0% 100% {
+    font-size: 20px;
+  }
+  20% {
+    font-size: 22px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +168,16 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes BGKEYFRAME {
+  0% 100% {
+    background: white;
+    color: black;
+  }
+  50% {
+    background: black;
+    color: white;
+  }
+}
 .navigtion {
   text-align: center;
   border-bottom: 1px solid #dfdfdf;
@@ -169,6 +187,7 @@ p {
 }
 .navigtion h1 {
   font-size: 5rem;
+  animation: BGKEYFRAME 3s infinite;
 }
 @media (max-width: 500px) {
   .navigtion h1 {
@@ -238,6 +257,10 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  cursor: pointer;
+  animation: popper 0.9s ease-in-out;
+}
 @media (max-width: 500px) {
   .home .space-images img {
     width: 90%;
@@ -295,6 +318,7 @@ footer {
   cursor: pointer;
   color: black;
   border: 1px solid black;
+  animation: FONT_ANIMATION 0.9s ease-in-out;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -311,6 +335,7 @@ footer {
     cursor: pointer;
     color: black;
     border: 1px solid black;
+    animation: FONT_ANIMATION 0.9s ease-in-out;
   }
 }
 .home .walk .walk-img {
@@ -328,4 +353,12 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes popper {
+  0% 100% {
+    box-shadow: none;
+  }
+  20% {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
 }
