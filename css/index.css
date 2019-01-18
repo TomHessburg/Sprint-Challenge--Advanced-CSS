@@ -162,6 +162,7 @@ p {
 }
 .navigtion {
   text-align: center;
+  border-bottom: 1px solid #dfdfdf;
 }
 .navigtion h1 {
   font-size: 5rem;
@@ -187,7 +188,7 @@ p {
 @media (max-width: 500px) {
   .navigtion nav a {
     font-size: 1.6rem;
-    margin: 0 15px;
+    margin: 0 12px;
   }
 }
 footer {
@@ -200,11 +201,22 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .topimg {
+  width: 100%;
+  padding: 0 2px;
+  border-radius: 10px;
 }
 .home .space-images {
   display: flex;
