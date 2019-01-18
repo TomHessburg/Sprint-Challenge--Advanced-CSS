@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigtion{
+    text-align: center;
+    h1{
+        font-size: 5rem;
+        @media (@phone){
+            font-size: 4rem;
+        }
+    }   
+    nav{
+        .m-width-and-center(60%, 10px);
+        .m-simple-flex(center);
+        
+
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 0 20px;
+            font-size: 1.8rem;
+            white-space: nowrap;
+            @media (@phone){
+                font-size: 1.6rem;
+                margin: 0 15px;
+              }
+            
+        }
+    }
+}
