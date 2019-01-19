@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    SORRY GANNON!!! but yea anyways, an adaptive layout will flex with size but it wont change(i.e. no implimintation of breakpoints or anything..)
 
 2. Describe what it means to be mobile first vs desktop first.
+    a mobile first approach will build mwith the mobile view in mind first while desktop first goes in the oposite direction.
+    syntactically, a mobile first approach will use min-widths and build up and a desktop first approach will use max-widths
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    The base unit by defult for your html tag is 16px, and rem(root em) looks at the root of your project for its size.
+    setting the base font size liek this will make 1 rem = 10px as apposed to 16, making it mroe readable.
 
 4. How would you describe preprocessing to someone new to CSS?
+    its essentially like an add-on for CSS. It make its more readable and human in the way that you can nest children within
+    their parents (similar to html), and also allows for added functionality in the way of mixins and variables.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    I LOVE VARIABLES!! beaing able to change multiple things at once throught a page is crucial for tweaking and quick adjustments.
+    LESS however is a bit touchy. its much easier to accidentally break stuff syntactically, and thats a bit annoying, but
+    generally a pretty easy fix.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

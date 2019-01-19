@@ -1,1 +1,37 @@
 // Mixins Here
+
+.m-simple-flex(@justify) {
+    display: flex;
+    justify-content: @justify;
+};
+
+.m-width-and-center(@width, @t-b-margin){
+    width: @width;
+    margin: @t-b-margin auto;
+    
+};
+
+
+.btn-mixin (@fontsize, @bg, @color, @borderradius, @width,@height) {
+    font-size: @fontsize;
+    background: @bg;
+    color: @color;
+    border-radius: @borderradius;
+    width: @width;
+    padding: @height 0;
+    text-align: center;  
+    
+    &:hover{
+        background: @color;
+        cursor: pointer;
+        color: @bg;
+        border: 1px solid black;
+        animation: FONT_ANIMATION .9s ease-in-out;
+    }
+};
+
+
+@keyframes FONT_ANIMATION {
+    0% 100%{font-size: 20px}
+    20% {font-size: 22px}
+  }
